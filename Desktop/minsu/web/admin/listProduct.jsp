@@ -1,7 +1,3 @@
-<!-- 模仿天猫整站j2ee 教程 为how2j.cn 版权所有-->
-<!-- 本教程仅用于学习使用，切勿用于非法用途，由此引起一切后果与本站无关-->
-<!-- 供购买者学习，请勿私自传播，否则自行承担相关法律责任-->
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" import="java.util.*"%>
 
@@ -12,7 +8,7 @@
 <script>
 	$(function() {
 		$("#addForm").submit(function() {
-			if (!checkEmpty("name", "产品名称"))
+			if (!checkEmpty("name", "房间名称"))
 				return false;
 // 			if (!checkEmpty("subTitle", "小标题"))
 // 				return false;
@@ -20,14 +16,14 @@
 				return false;
 			if (!checkNumber("promotePrice", "优惠价格"))
 				return false;
-			if (!checkInt("stock", "库存"))
+			if (!checkInt("stock", "剩余房间"))
 				return false;
 			return true;
 		});
 	});
 </script>
 
-<title>产品管理</title>
+<title>房间管理</title>
 
 
 <div class="workingArea">
@@ -35,7 +31,7 @@
 	<ol class="breadcrumb">
 	  <li><a href="admin_category_list">所有分类</a></li>
 	  <li><a href="admin_product_list?cid=${c.id}">${c.name}</a></li>
-	  <li class="active">产品管理</li>
+	  <li class="active">房间管理</li>
 	</ol>
 
 
@@ -47,11 +43,11 @@
 				<tr class="success">
 					<th>ID</th>
 					<th>图片</th>
-					<th>产品名称</th>
+					<th>房间名称</th>
 					<th>产品小标题</th>
 					<th width="53px">原价格</th>
 					<th width="80px">优惠价格</th>
-					<th width="80px">库存数量</th>
+					<th width="80px">剩余房间</th>
 					<th width="80px">图片管理</th>
 					<th width="80px">设置属性</th>
 					<th width="42px">编辑</th>
@@ -96,17 +92,17 @@
 	</div>
 
 	<div class="panel panel-warning addDiv">
-		<div class="panel-heading">新增产品</div>
+		<div class="panel-heading">新增房间</div>
 		<div class="panel-body">
 			<form method="post" id="addForm" action="admin_product_add">
 				<table class="addTable">
 					<tr>
-						<td>产品名称</td>
+						<td>房间名称</td>
 						<td><input id="name" name="name" type="text" 
 							class="form-control"></td>
 					</tr>
 					<tr>
-						<td>产品小标题</td>
+						<td>房间描述</td>
 						<td><input id="subTitle" name="subTitle" type="text"
 							class="form-control"></td>
 					</tr>
