@@ -30,12 +30,10 @@ $(function(){
 					<th>ID</th>
 					<th>状态</th>
 					<th>金额</th>
-					<th width="100px">商品数量</th>
+					<th width="100px">房间数量</th>
 					<th width="100px">买家名称</th>
 					<th>创建时间</th>
 					<th>支付时间</th>
-					<th>发货时间</th>
-					<th>确认收货时间</th>
 					<th width="120px">操作</th>
 				</tr>
 			</thead>
@@ -56,11 +54,7 @@ $(function(){
 						<td>
 							<button oid=${o.id} class="orderPageCheckOrderItems btn btn-primary btn-xs">查看详情</button>
 							
-							<c:if test="${o.status=='waitDelivery'}">
-								<a href="admin_order_delivery?id=${o.id}">
-									<button class="btn btn-primary btn-xs">发货</button>
-								</a>							
-							</c:if>
+							
 						</td>
 					</tr>
 					<tr class="orderPageOrderItemTR"  oid=${o.id}>
@@ -81,7 +75,7 @@ $(function(){
 											</td>
 											<td align="right">
 											
-												<span class="text-muted">${oi.number}个</span>												
+												<span class="text-muted">${oi.number}间</span>												
 											</td>
 											<td align="right">
 											
