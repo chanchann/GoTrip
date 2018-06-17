@@ -10,7 +10,7 @@
 		$("#addForm").submit(function() {
 			if (!checkEmpty("name", "房间名称"))
 				return false;
-// 			if (!checkEmpty("subTitle", "小标题"))
+// 			if (!checkEmpty("subTitle", "房间描述"))
 // 				return false;
 			if (!checkNumber("orignalPrice", "原价格"))
 				return false;
@@ -44,7 +44,7 @@
 					<th>ID</th>
 					<th>图片</th>
 					<th>房间名称</th>
-					<th>产品小标题</th>
+					<th>房间描述</th>
 					<th width="53px">原价格</th>
 					<th width="80px">优惠价格</th>
 					<th width="80px">剩余房间</th>
