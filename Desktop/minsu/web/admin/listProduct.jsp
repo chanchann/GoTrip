@@ -108,17 +108,17 @@
 					</tr>
 					<tr>
 						<td>原价格</td>
-						<td><input id="orignalPrice" value="99.98" name="orignalPrice" type="text"
+						<td><input id="orignalPrice" value="1999" name="orignalPrice" type="text"
 							class="form-control"></td>
 					</tr>
 					<tr>
 						<td>优惠价格</td>
-						<td><input id="promotePrice"  value="19.98" name="promotePrice" type="text"
+						<td><input id="promotePrice"  value="1898" name="promotePrice" type="text"
 							class="form-control"></td>
 					</tr>
 					<tr>
-						<td>库存</td>
-						<td><input id="stock"  value="99" name="stock" type="text"
+						<td>剩余房间</td>
+						<td><input id="stock"  value="9" name="stock" type="text"
 							class="form-control"></td>
 					</tr>
 					<tr class="submitTR">
