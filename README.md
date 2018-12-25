@@ -2,6 +2,14 @@
 
 旅游平台网页前后端
 
+## Contributor
+
+Shiyu Yi
+
+Changhong He
+
+Haojun Qin
+
 ## 功能清单
 ### 游客功能
 + 用户注册、登录
